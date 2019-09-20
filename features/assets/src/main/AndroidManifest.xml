@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2018 Google LLC.
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -22,5 +21,11 @@
 
     <!-- This feature module doesn't contain code. -->
     <application android:hasCode="false" />
+
+    <dist:module
+        dist:onDemand="true"
+        dist:title="@string/module_assets">
+        <dist:fusing dist:include="true" />
+    </dist:module>
 
 </manifest>
